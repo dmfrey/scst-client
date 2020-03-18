@@ -1,0 +1,13 @@
+logging.level:
+  org.springframework.integration: DEBUG
+  org.springframework.cloud.contract: DEBUG
+  org.springframework.cloud.stream: DEBUG
+  com.vmware.scst.samples: DEBUG
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        client-in-0:
+          destination: UpdateChannel
+          group: client.UpdateChannel
